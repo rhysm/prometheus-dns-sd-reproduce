@@ -1,0 +1,9 @@
+. {
+  etcd test.lan {
+    path /skydns
+    endpoint http://10.2.50.2:2379
+  }
+  log
+  errors
+  forward . 8.8.8.8 8.8.4.4
+}
